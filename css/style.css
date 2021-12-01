@@ -184,3 +184,10 @@ a {text-decoration: none}
     width:          1px;    
     color: #d9d9d9;   
 }
+.snow-gif {
+    position: absolute;
+    align-self: flex-start;
+    width: 7%;
+    left: 6%;
+    top: 0;
+}
