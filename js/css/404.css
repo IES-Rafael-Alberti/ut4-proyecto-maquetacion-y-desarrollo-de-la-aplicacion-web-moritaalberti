@@ -1,0 +1,103 @@
+
+@font-face {
+    font-family: "Breaking Bad";
+    src: url("../fonts/Heart Breaking Bad.otf");
+}
+@font-face {
+    font-family: "Bitter";
+    src: url("../fonts/Bitter/static/Bitter-Medium.ttf");
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Bitter";
+    color: #D9D9D9;
+    background-color: black;
+}
+.body{
+    
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+
+}.footer{
+margin-top: 5%;
+
+}
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 1.5vw;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}.main{
+    text-align: center;
+    align-self: center;
+}
+
+.header-nav{
+    width:100%;
+
+}
+a {text-decoration: none}
+.header-li{
+    font-size: 1.2vw;
+    list-style:none;
+    transition: all 0.2s ease-in;
+
+
+}
+.header-li:hover{
+    font-size: 1.5vw;
+    transition: all 0.2s ease-in;
+
+}
+.header-li--logo{
+    width: 7vw;
+
+}.header-ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.font-breaking-bad{
+    font-family: Breaking Bad;
+    transition: all 0.2s ease-in;
+
+}
+
+.font-breaking-bad:hover{
+    font-size: 3.7vw;
+    
+    transition: all 0.2s ease-in;
+
+}
+.font-breaking-bad::first-letter:hover{
+    font-size: 3.7vw;
+    color: #FDD929;
+    transition: all 0.2s ease-in;
+}
+.font-breaking-bad-title{
+    font-family: Breaking Bad;
+    font-size: 5vw;
+}
+@keyframes mover-404{
+    0%{transform-origin: -100px;}
+    100%{transform: translateX(100px);}
+}
+.span-404{
+    animation: mover-404 3s ease-in-out 0  ;
+}
+
+
+.span-archivo{
+    
+}.span-encontrado{
+    
+}

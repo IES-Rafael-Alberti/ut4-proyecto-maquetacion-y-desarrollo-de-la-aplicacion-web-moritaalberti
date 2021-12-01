@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="css/style-contacto.css" >
+    <script async type="text/javascript" src="js/form-script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <ul class="header-ul">
+                <li class="header-li"><img class="header-li--logo" src="images/logo_breaking_bad.png"></img></li>
+                <li class="header-li"><a href="index.html" class="">Inicio</a></li>
+                <li class="header-li"><a class="">Personajes</a></li>
+                <li class="header-li"><a class="">Episodios</a></li>
+                <li class="header-li"><a class="">Contacto</a></li>
+                <li class="header-li"><a  href="registro.html" class="">Registro</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section>
+            <img  class="main-walterphoto" src="images/walter-contacto.png" >
+
+        </section>
+        <section>
+            <form  class="main-form">
+                <label for="nombre" id="label_nombre"></label>
+                <input class="form-inputs" type="text" id="nombre" placeholder="Nombre" required>
+                <label for="apellidos" id="label_apellidos"></label>
+                <input class="form-inputs" type="text" id="apellidos" placeholder="Apellidos">
+                <label for="correo" id="label_correo"></label>
+                <input class="form-inputs" type="email" id="correo" placeholder="Correo Electronico" required>
+                <label for="telefono" id="label_telefono"></label>
+                <input class="form-inputs" type="number" id="telefono" placeholder="Telefono" >
+                <input class="form-checkboxs" type="checkbox" id="terminos" required> <span>Terminos y Condiciones</span></input>
+                <input class="form-checkboxs" type="checkbox" id="spam" > <span>Deseo recibir correos con noticias</span></input>
+                <textarea class="form-message" id="mensaje" maxlength="500" required placeholder="Mensaje"></textarea>
+                <p class="contador_mensaje" id="contador_mensaje">0/500</p>
+                <button type="submit" class="form-button" onclick="form_validation()">Enviar</button>
+            </form>
+
+        </section>
+        <section >
+            <img class="main-jessiephoto" src="images/jessie-contacto.png" >
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <hr>
+        <nav class="footer-nav" >
+            <a class="">Cookies</a>
+            <a class="">Privacidad</a>
+            <a class="">Info Legal</a>
+            <a class="">Sobre Nosotros</a>
+            <a class="">Condiciones</a>
+            <a class=""  href="http://www.savewalterwhite.com/">SaveWalterWhite</a>
+        </nav>
+    </footer>
+    
+</body>
+</html>

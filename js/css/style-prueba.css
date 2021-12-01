@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Breaking Bad";
+    src: url("../fonts/Heart Breaking Bad.otf");
+}
+@font-face {
+    font-family: "Bitter";
+    src: url("../fonts/Bitter/static/Bitter-Medium.ttf");
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Bitter";
+    color: #D9D9D9;
+    background-color: black;
+}
+.body{
+    
+    display: grid;
+
+}.footer{
+margin-top: 5%;
+
+}
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 1.5vw;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header-nav{
+    width:100%;
+
+}
+.header-li{
+    font-size: 1.2vw;
+    list-style:none;
+
+}.header-li--logo{
+    width: 7vw;
+
+}.header-ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}.main{
+    grid-template-columns: 3fr 4fr 3fr;
+    grid-template-rows: 0.3fr;
+    display: grid;
+
+}.main-description{
+    justify-content: space-evenly;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+  
+   
+
+}
+.main-description-image{
+    width: 100%;
+
+}.main-description-h2{
+
+}
+.main-image{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;;
+
+
+
+
+}.main-nav{
+    grid-column-start: 3;
+    font-family:"Breaking Bad" ;
+    display: flex;
+    align-items:center;
+    align-content: space-between;
+    margin-left: 3%;
+
+
+}.main-nav-font{
+
+
+}.main-nav-ul{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    align-content: space-between;
+    font-size: 3.5vw;
+    list-style:none;
+    margin-left: 2%;
+
+}.main-title{
+    grid-column-end: 4;
+    grid-column-start: 2;
+
+}.main-title-h1{
+    font-weight: normal;
+    font-size: 3vw;
+
+}.main-title-image{
+    height: 100%
+
+}
+.font-breaking-bad{
+    font-family: Breaking Bad;
+}
+.font-breaking-bad-title{
+    font-family: Breaking Bad;
+    font-size: 5vw;
+}
+.nav-hr-vertical{
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height: 75%;
+    width:          1px;       
+}
+.image-hr-vertical{
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height: 95%;
+    width:          1px;       
+}
