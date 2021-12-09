@@ -89,6 +89,9 @@ a {text-decoration: none}
     
 
 }
+.main-personaje-div:hover{
+    border: #FDD929 1px solid;
+}
 .pesonaje-foto{
     height: 100%;
     width: 100%;

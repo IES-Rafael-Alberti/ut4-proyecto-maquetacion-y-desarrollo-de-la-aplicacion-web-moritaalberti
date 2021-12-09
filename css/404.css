@@ -38,7 +38,6 @@ margin-top: 5%;
     flex-wrap: wrap;
     justify-content: space-between;
 }.main{
-    text-align: center;
     align-self: center;
 }
 
@@ -90,20 +89,191 @@ a {text-decoration: none}
     font-family: Breaking Bad;
     font-size: 5vw;
 }
+/*----------Animacion----------------*/
 @keyframes mover-404{
-    0%{transform-origin: -1000px;}
-    100%{transform: translateX(1000px);}
+    0%{left:0px}
+    80%{left: 40vw; transform:rotate(10deg)}
+    100%{
+        left: 35vw;
+
+    }
 }
-.span-404{
-    animation: mover-404 3s ease-in-out 0  ;
+.mensaje{
+    font-size: 2vw;
+    animation-name: mover-404;
+    animation-duration:2s;
+    animation-delay: 0.5s;
+    animation-fill-mode:forwards;
+    position: relative;
+}
+@keyframes agrandar {
+    0%{
+        font-size: 2vw
+    }
+    50%{
+        font-size: 2.5vw  ;
+    }
+    100%{
+        font-size: 2vw;
+    }
+}
+#a_1{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 2.5s;
+
+}
+#a_2{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 2.7s;
+
+}
+#a_3{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 2.9s;
+
+}
+#a_4{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 3.1s;
+
+}
+#a_5{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 3.3s;
+
+}
+#a_6{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 3.5s;
+
+}
+#a_7{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 3.7s;
+
+}
+#a_8{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 3.9s;
+
+}
+#a_9{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 4.1s;
+
+}
+#a_10{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 4.3s;
+
+}
+#a_11{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 4.5s;
+
+}
+#a_12{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 4.7s;
+
+}
+#a_13{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 4.9s;
+
+}
+#a_14{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 5.1s;
+
+}
+#a_15{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 5.3s;
+
+}
+#a_16{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 5.5s;
+
+}
+#a_17{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 5.7s;
+
+}
+#a_18{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 5.9s;
+
+}
+#a_19{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 6.1s;
+
+}
+#a_20{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 6.3s;
+
+}
+#a_21{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 6.5s;
+
+}
+#a_22{
+    animation-direction:alternate;
+    animation-name: agrandar;
+    animation-duration:1s;
+    animation-delay: 6.7s;
+
 }
 
 
-.span-archivo{
-    
-}.span-encontrado{
-    
-}@media(max-width: 850px){
+@media(max-width: 850px){
 /*Modificacin footer y header para hacerlo resposive eliminando algunos elementos y reajustando su tamaño*/
 .header-li--logo {
     width: 9vw;
