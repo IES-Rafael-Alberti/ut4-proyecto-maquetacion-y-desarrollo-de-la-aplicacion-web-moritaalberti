@@ -22,6 +22,9 @@
 margin-top: 5%;
 
 }
+.footer-contacto{
+    display: none;
+}
 .footer-nav{
     display: flex;
     align-items: center;

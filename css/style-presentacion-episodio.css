@@ -22,6 +22,9 @@
 margin-top: 5%;
 
 }
+.footer-contacto{
+    display: none;
+}
 .footer-nav{
     display: flex;
     align-items: center;
@@ -107,7 +110,86 @@ p{
 .main-image{
     padding-top: 1.5%;
     justify-self:center;
-    width: 50%;
+    object-fit: cover;
+    object-position: right;
+    width: 100%;
+
+
+}
+div{
     grid-column-start: 2;
+    overflow: hidden;
+    height:  80%;
+
+}
+.main-parrafo p{
+    font-size: 1vw;
+}
+@media(max-width: 850px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+    }
+    .font-breaking-bad-title{
+        text-align: center;
+    }
+    .main-description-h2{
+        font-size: 4vw;
+    }
+    .main-description-h3{
+        font-size: 2vw;
+    }
+    .main-parrafo p{
+        font-size: 1.7vw;
+    }
+    .main-image{
+        height: 70%;
+    }
+    /*Modificacin footer y header para hacerlo resposive eliminando algunos elementos y reajustando su tamaño*/
+    .header-li--logo{
+        width: 9vw;
+
+    }
+    .header-li{
+        font-size: 3vw;
+        list-style:none;
+        transition: all 0.2s ease-in;
+
+
+    }
+    .header-li:hover{
+        font-size: 3vw;
+        transition: all 0.2s ease-in;
+
+    }
+    #header_contacto{
+        display: none;
+    }
+    #header_inicio{
+        display: none;
+    }
+    .footer-nav{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        font-size: 3vw;
+    }
+    .footer-condiciones{
+        display: none;
+    }
+    .footer-cookies{
+        display: none;
+    }
+    .footer-walter{
+        display: none;
+    }
+    .footer-nosotros{
+        display: none;
+    }
+    .footer-contacto{
+        display: block;
+    }
+    /*-------------------------------*/
 }
 

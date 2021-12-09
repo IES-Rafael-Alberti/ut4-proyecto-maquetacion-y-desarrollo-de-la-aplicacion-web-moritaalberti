@@ -22,6 +22,9 @@
 margin-top: 5%;
 
 }
+.footer-contacto{
+    display: none;
+}
 .footer-nav{
     display: flex;
     align-items: center;
@@ -59,77 +62,13 @@ a {text-decoration: none}
     justify-content: space-around;
 
 
+
 }.main{
-    grid-template-columns: 3fr 4fr 2fr;
-    grid-template-rows: 0.3fr 2fr;
-    display: grid;
-}.main-description{
-    
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 
-    grid-column-start: 2;
-    display: flex;
-    flex-direction: column;
-    padding-left: 0.5vw;
-  
-   
-
-}
-.main-description-image{
-    width: 100%;
-    padding: 3%;
-
-}
-.main-image{
-    
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    display: flex;
-    flex-direction: row;
-    
-
-
-
-}.main-nav{
-    grid-column-start: 3;
-    font-family:"Breaking Bad" ;
-    display: flex;
-    align-items:center;
-    align-content: space-between;
-    margin-left: 3%;
-
-
-}.main-description-h2{
-    padding: 3%;
-
-}
-.main-description-description{
-    padding: 3%;
-}.main-nav-ul{
-    display: flex;
-    align-items:flex-start;
-    flex-direction: column;
-    align-content: space-between;
-    font-size: 3.5vw;
-    list-style:none;
-    margin-left: 2%;
-
-}.main-title{
-    grid-column-end: 4;
-    grid-column-start: 2;
-
-}.main-title-h1{
-    font-weight: normal;
-    font-size: 3vw;
-    padding-left: 0.5vw;
-
-}
-.main-title-image{
-    width: 99%;
-    
-
-}
 .font-breaking-bad{
     font-family: Breaking Bad;
     transition: all 0.2s ease-in;
@@ -148,6 +87,7 @@ a {text-decoration: none}
     transition: all 0.2s ease-in;
 }
 .font-breaking-bad-title{
+    font-weight: normal;
     font-family: Breaking Bad;
     font-size: 5vw;
 }
@@ -163,4 +103,96 @@ a {text-decoration: none}
     height: 95%;
     width:          1px;    
     color: #d9d9d9;   
+}
+.main-episodios {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.main-episodio-div{
+        padding: 1%;
+        text-align: center;
+        position: relative;
+
+
+
+}
+.main-episodio-image:hover{
+    border: 2px solid #FDD929;
+}
+
+.main-episodio-image{
+    width: 100%;
+
+}
+.title-episodio{
+    text-align: center;
+    position: relative;
+    bottom :10%;
+    height: 8.7%;
+    width: 100%;
+    background-color: #D9D9D980;
+    color: black;
+}
+@media (max-width: 850px) {
+    /*Modificacin footer y header para hacerlo resposive eliminando algunos elementos y reajustando su tamaño*/
+    .header-li--logo {
+        width: 9vw;
+
+    }
+
+    .header-li {
+        font-size: 3vw;
+        list-style: none;
+        transition: all 0.2s ease-in;
+
+
+    }
+    .header-li:hover{
+        font-size: 3vw;
+        transition: all 0.2s ease-in;
+
+    }
+
+    #header_contacto {
+        display: none;
+    }
+
+    #header_inicio {
+        display: none;
+    }
+
+    .footer-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 3vw;
+    }
+
+    .footer-condiciones {
+        display: none;
+    }
+
+    .footer-cookies {
+        display: none;
+    }
+
+    .footer-walter {
+        display: none;
+    }
+
+    .footer-nosotros {
+        display: none;
+    }
+
+    .footer-contacto {
+        display: block;
+    }
+
+/*-------------------------------*/
+
+
 }

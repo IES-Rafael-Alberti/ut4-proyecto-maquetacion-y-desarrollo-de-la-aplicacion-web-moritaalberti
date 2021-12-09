@@ -24,6 +24,9 @@
 margin-top: 5%;
 
 }
+.footer-contacto{
+    display: none;
+}
 .footer-nav{
     display: flex;
     align-items: center;
@@ -88,8 +91,8 @@ a {text-decoration: none}
     font-size: 5vw;
 }
 @keyframes mover-404{
-    0%{transform-origin: -100px;}
-    100%{transform: translateX(100px);}
+    0%{transform-origin: -1000px;}
+    100%{transform: translateX(1000px);}
 }
 .span-404{
     animation: mover-404 3s ease-in-out 0  ;
@@ -100,4 +103,55 @@ a {text-decoration: none}
     
 }.span-encontrado{
     
+}@media(max-width: 850px){
+/*Modificacin footer y header para hacerlo resposive eliminando algunos elementos y reajustando su tamaño*/
+.header-li--logo {
+    width: 9vw;
+
 }
+
+.header-li {
+    font-size: 3vw;
+    list-style: none;
+    transition: all 0.2s ease-in;
+
+
+}
+
+#header_contacto {
+    display: none;
+}
+
+#header_inicio {
+    display: none;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3vw;
+}
+
+.footer-condiciones {
+    display: none;
+}
+
+.footer-cookies {
+    display: none;
+}
+
+.footer-walter {
+    display: none;
+}
+
+.footer-nosotros {
+    display: none;
+}
+
+.footer-contacto {
+    display: block;
+}
+}
+/*-------------------------------*/
+

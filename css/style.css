@@ -1,3 +1,4 @@
+/*Importacion de fuente breaking bad*/
 @font-face {
     font-family: "Breaking Bad";
     src: url("../fonts/Heart Breaking Bad.otf");
@@ -6,6 +7,7 @@
     font-family: "Bitter";
     src: url("../fonts/Bitter/static/Bitter-Medium.ttf");
 }
+/*Eliminacion de padding y margis asi como aplicar el border boz y el color de fondo y color de letra que va a tener toda la pagina por defecto*/
 *{
     padding: 0%;
     margin: 0%;
@@ -22,6 +24,10 @@
 margin-top: 5%;
 
 }
+.footer-contacto{
+    display: none;
+}
+/*Display de footer y header de forma que quede todo bien alineado*/
 .footer-nav{
     display: flex;
     align-items: center;
@@ -37,7 +43,9 @@ margin-top: 5%;
     width:100%;
 
 }
+/*Eliminacion de subrayado en enlaces*/
 a {text-decoration: none}
+/*Eliminacion de punto en las listas, asi como animacion al pasar el raton por encima*/
 .header-li{
     font-size: 1.2vw;
     list-style:none;
@@ -67,7 +75,7 @@ a {text-decoration: none}
 .header-li--logo{
     width: 7vw;
 
-}
+}/*Animacion de rotacion de logo*/
 .header-li--logo:hover{
     animation: rotation 2s alternate ;
 }
@@ -79,11 +87,15 @@ a {text-decoration: none}
     justify-content: space-around;
 
 
-}.main{
+}
+/*Display del main utilizando grid*/
+.main{
     grid-template-columns: 3fr 4fr 2fr;
     grid-template-rows: 0.3fr 2fr;
     display: grid;
-}.main-description{
+}
+/*Display de la descripcion de la pagina donde dice sinopsis*/
+.main-description{
     
 
     grid-column-start: 2;
@@ -99,6 +111,7 @@ a {text-decoration: none}
     padding: 3%;
 
 }
+/*Colocacion de la imagen principal en pantallas*/
 .main-image{
     
     grid-row-start: 1;
@@ -111,7 +124,9 @@ a {text-decoration: none}
 
 
 
-}.main-nav{
+}
+/*Colocacion en el main del navegador asi como la disposicion de sus elementos*/
+.main-nav{
     grid-column-start: 3;
     font-family:"Breaking Bad" ;
     display: flex;
@@ -150,23 +165,159 @@ a {text-decoration: none}
     
 
 }
+/*Media query para que la web sea responsive a partir de este punto toda pantalla que sea inferior a 850px se le aplicara este css*/
+@media (max-width: 850px) {
+    ul.main-nav-ul{
+        font-size: 8vw;
+    }
+    /*Elimacion de la barra separadora del menu principal*/
+    .nav-hr-vertical{
+        display: none;
+    }
+    span.font-breaking-bad-title{
+        font-family: Breaking Bad;
+        font-size: 7vw;
+    }
+    /*Nueva disposicion del main acorde, a dispositivos mas alargados tipo moviles*/
+    .main{
+        display: grid;
+        grid-template-rows:3fr 0.5fr 5fr ;
+        grid-template-columns:5fr 5fr ;
+    }
+    .main-description{
+
+        grid-column-start: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-column-end: 3;
+        grid-row-start: 3;
+
+
+    }
+    .main-description-image{
+        width: 100%;
+
+
+    }
+    .main-image{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        display: flex;
+        flex-direction: row;
+
+
+
+
+    }.main-nav{
+         grid-column-start: 2;
+         grid-row-start: 1;
+         font-family:"Breaking Bad" ;
+         display: flex;
+         align-items:center;
+         align-content: space-between;
+         margin-left: 3%;
+
+
+     }.main-description-h2{
+    font-size: 5vw;
+          padding: 3%;
+     }
+    .main-description-description{
+        font-size: 3vw;
+        padding: 3%;
+    }.main-nav-ul{
+         display: flex;
+         align-items:flex-start;
+         flex-direction: column;
+         align-content: space-between;
+         font-size: 3.5vw;
+         list-style:none;
+         margin-left: 2%;
+
+     }.main-title{
+    text-align: center;
+    grid-column-start: 1;
+
+      }.main-title-h1{
+           font-weight: normal;
+           font-size: 5vw;
+
+
+       }
+    .main-title-image{
+        width: 99%;
+    }
+    /*Modificacin footer y header para hacerlo resposive eliminando algunos elementos y reajustando su tamaño*/
+    .header-li--logo {
+        width: 9vw;
+
+    }
+
+    .header-li {
+        font-size: 3vw;
+        list-style: none;
+        transition: all 0.2s ease-in;
+
+
+    }
+    .header-li:hover{
+        font-size: 3vw;
+        transition: all 0.2s ease-in;
+
+    }
+
+    #header_contacto {
+        display: none;
+    }
+
+    #header_inicio {
+        display: none;
+    }
+
+    .footer-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 3vw;
+    }
+
+    .footer-condiciones {
+        display: none;
+    }
+
+    .footer-cookies {
+        display: none;
+    }
+
+    .footer-walter {
+        display: none;
+    }
+
+    .footer-nosotros {
+        display: none;
+    }
+
+    .footer-contacto {
+        display: block;
+    }
+}
+/*-------------------------------*/
+
+/*Aplicacion de la fuente importada a una clase para usarla despues en el main*/
 .font-breaking-bad{
     font-family: Breaking Bad;
     transition: all 0.2s ease-in;
 
 }
-
+/*Animacion para hacer que en el menu principal se agrande la letra al pasar por encima*/
 .font-breaking-bad:hover{
     font-size: 3.7vw;
     
     transition: all 0.2s ease-in;
 
 }
-.font-breaking-bad::first-letter:hover{
-    font-size: 3.7vw;
-    color: #FDD929;
-    transition: all 0.2s ease-in;
-}
+
 .font-breaking-bad-title{
     font-family: Breaking Bad;
     font-size: 5vw;
@@ -184,6 +335,7 @@ a {text-decoration: none}
     width:          1px;    
     color: #d9d9d9;   
 }
+/*disposisicon del easter egg de la nieve al pasar por encima del logo*/
 .snow-gif {
     position: absolute;
     align-self: flex-start;
@@ -191,3 +343,4 @@ a {text-decoration: none}
     left: 6%;
     top: 0;
 }
+

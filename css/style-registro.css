@@ -23,6 +23,9 @@
 margin-top: 5%;
 
 }
+.footer-contacto{
+    display: none;
+}
 .footer-nav{
     display: flex;
     align-items: center;
@@ -168,6 +171,181 @@ a {text-decoration: none}
     transition: all 0.2s ease-in;
 
 }
+@media (max-width: 850px) {
+    .main-form-inputs{
+        height: 100%;
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+        justify-content: space-around;
+
+        margin-left: 2%;
+
+    }
+    .main-form{
+        grid-column-start: 3;
+        font-family:"Breaking Bad" ;
+        display: flex;
+        align-items:center;
+        align-content: space-around;
+        margin-left: 3%;
+
+
+    }
+    div span{
+        font-size: 3vw;
+    }
+    .form-button {
+        width: 40%;
+        font-size: 5vw;
+        font-family: "Breaking Bad";
+        border: 1px solid #d9d9d9;
+        align-self: center;
+    }
+    .form-inputs{
+
+        border:0;
+        font-size: 3vw;
+        border-bottom:1px solid #d9d9d9;;
+
+    }
+    ul.main-nav-ul{
+        font-size: 8vw;
+    }
+    .form-hr-vertical{
+        display: none;
+    }
+    span.font-breaking-bad-title{
+        font-family: Breaking Bad;
+        font-size: 7vw;
+    }
+    .main{
+        display: grid;
+        grid-template-rows:3fr 0.5fr 5fr ;
+        grid-template-columns:5fr 5fr ;
+    }
+    .main-description{
+
+        grid-column-start: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-column-end: 3;
+        grid-row-start: 3;
+
+
+    }
+    .main-description-image{
+        width: 100%;
+
+
+    }
+    .main-image{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        display: flex;
+        flex-direction: row;
+
+
+
+
+    }.main-form{
+         grid-column-start: 2;
+         grid-row-start: 1;
+         font-family:"Breaking Bad" ;
+         display: flex;
+         align-items:center;
+         align-content: space-between;
+         margin-left: 3%;
+
+
+     }.main-description-h2{
+          font-size: 5vw;
+          padding: 3%;
+      }
+    .main-description-description{
+        font-size: 3vw;
+        padding: 3%;
+    }.main-nav-ul{
+         display: flex;
+         align-items:flex-start;
+         flex-direction: column;
+         align-content: space-between;
+         font-size: 3.5vw;
+         list-style:none;
+         margin-left: 2%;
+
+     }.main-title{
+          text-align: center;
+          grid-column-start: 1;
+        top:1vw;
+
+      }.main-title-h1{
+           font-weight: normal;
+           font-size: 5vw;
+
+
+       }
+    .main-title-image{
+        width: 99%;
+    }
+    /*Modificacin footer y header para hacerlo resposive eliminando algunos elementos y reajustando su tamaño*/
+    .header-li--logo {
+        width: 9vw;
+
+    }
+
+    .header-li {
+        font-size: 3vw;
+        list-style: none;
+        transition: all 0.2s ease-in;
+
+
+    }
+    .header-li:hover{
+        font-size: 3vw;
+        transition: all 0.2s ease-in;
+
+    }
+    #header_contacto {
+        display: none;
+    }
+
+    #header_inicio {
+        display: none;
+    }
+
+    .footer-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 3vw;
+    }
+
+    .footer-condiciones {
+        display: none;
+    }
+
+    .footer-cookies {
+        display: none;
+    }
+
+    .footer-walter {
+        display: none;
+    }
+
+    .footer-nosotros {
+        display: none;
+    }
+
+    .footer-contacto {
+        display: block;
+    }
+
+/*-------------------------------*/
+
+
+}
 
 .font-breaking-bad:hover{
     font-size: 3.7vw;
@@ -196,4 +374,20 @@ a {text-decoration: none}
     height: 95%;
     width:          1px;    
     color: #d9d9d9;   
+}
+.form-inputs-error{
+    border:0;
+    font-size: 1vmax;
+    border-bottom:1px solid red;
+}
+.form-checkboxs{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: arial;
+}
+.span_error_forms{
+    color: red;
+    font-size: 0.8vw;
+
 }

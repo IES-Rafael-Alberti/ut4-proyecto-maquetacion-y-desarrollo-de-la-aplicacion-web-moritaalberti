@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" type="text/css" href="css/style-registro.css" >
+    <script  async type="text/javascript"  src="js/registro.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
 
 </head>
 <body class="body">
     <header class="header">
         <nav class="header-nav">
             <ul class="header-ul">
-                <li class="header-li"><img class="header-li--logo" src="images/logo_breaking_bad.png"></img></li>
-                <li class="header-li"><a href="index.html" class="">Inicio</a></li>
+                <li class="header-li"><a href="index.html" class=""><img class="header-li--logo" src="images/logo_breaking_bad.png"></img></a></li>
+                <li id="header_inicio" class="header-li"><a  href="index.html">Inicio</a></li>
                 <li class="header-li"><a href="personajes.html" class="">Personajes</a></li>
-                <li class="header-li"><a class="">Episodios</a></li>
-                <li class="header-li"><a href="contacto.html">Contacto</a></li>
-                <li class="header-li"><a href="login.html" class="">Login</a></li>
+                <li class="header-li"><a href="episodios.html" class="">Episodios</a></li>
+                <li id="header_contacto" class="header-li"><a href="contacto.html" >Contacto</a></li>
+                <li class="header-li"><a  href="login.html" class="">Login</a></li>
 
             </ul>
         </nav>
@@ -42,20 +45,27 @@
         <section class="main-form">
                 <hr class="form-hr-vertical">
                 <form class="main-form-inputs">
-                    <label for="nombre" id="nombre"></label>
-                    <input class="form-inputs" type="text" id="nombre" placeholder="Nombre" required>
-                    <label for="apellidos" id="apellidos"></label>
-                    <input class="form-inputs" type="text" id="apellidos" placeholder="Apellidos">
-                    <label for="correo" id="correo"></label>
-                    <input class="form-inputs" type="email" id="correo" placeholder="Correo Electronico" required>
-                    <label for="usuario" id="usuario"></label>
-                    <input class="form-inputs" type="text" id="usuario" placeholder="Usuario" required>
-                    <label for="contraseña" id="contraseña"></label>
-                    <input class="form-inputs" type="password" id="contraseña" placeholder="Contraseña" required>
-                    <label class="form-inputs" for="contraseña2" id="contraseña2"></label>
-                    <input class="form-inputs" type="password" id="contraseña2" placeholder="Repite la contraseña" required>
-                    <input class="form-checkboxs" type="checkbox" id="terminos" required> <span>Terminos y Condiciones</span></input>
-                    <input class="form-checkboxs" type="checkbox" id="spam" > <span>Deseo recibir correos con noticias</span></input>
+                    <label for="nombre" id="label_nombre"></label>
+                    <input class="form-inputs" type="text" id="nombre" placeholder="Nombre" required><span hidden id="nombre_error" class="span_error_forms"></span>
+
+                    <label for="apellidos" id="label_apellidos"></label>
+                    <input class="form-inputs" type="text" id="apellidos" placeholder="Apellidos"><span hidden id="apellidos_error" class="span_error_forms"></span>
+
+                    <label for="correo" id="label_correo"></label>
+                    <input class="form-inputs" type="email" id="correo" placeholder="Correo Electronico" required><span hidden id="correo_error" class="span_error_forms"></span>
+
+                    <label for="usuario" id="label_usuario"></label>
+                    <input class="form-inputs" type="text" id="usuario" placeholder="Usuario" required><span hidden id="usuario_error" class="span_error_forms"></span>
+
+                    <label for="contraseña" id="label_contraseña"></label>
+                    <div><input class="form-inputs" type="password" id="contraseña" placeholder="Contraseña" required><i id="ojo" class="fas fa-eye"></i></div>
+                    <span hidden id="contraseña_error" class="span_error_forms"></span>
+                    <label class="form-inputs" for="contraseña2" id="label_contraseña2"></label>
+                    <div><input class="form-inputs" type="password" id="contraseña2" placeholder="Repite la contraseña" required><i id="ojo2" class="fas fa-eye"></i></div>
+                    <span hidden id="contraseña2_error" class="span_error_forms"></span>
+
+                    <div><input class="form-checkboxs" type="checkbox" id="terminos" required> <span>   Terminos y Condiciones</span></input></div>
+                    <div><input class="form-checkboxs" type="checkbox" id="spam" > <span>   Deseo recibir correos con noticias</span></input></div>
                     <button class="form-button" type="submit" class="form-boton-enviar" >Enviar</button>
                 </form>
         </section>
@@ -63,12 +73,18 @@
     <footer class="footer">
         <hr>
         <nav class="footer-nav" >
-            <a class="">Cookies</a>
+            <a class="footer-cookies">Cookies</a>
             <a class="">Privacidad</a>
             <a class="">Info Legal</a>
-            <a class="">Sobre Nosotros</a>
-            <a class="">Condiciones</a>
-            <a class=""  href="http://www.savewalterwhite.com/">SaveWalterWhite</a>
+            <a class="footer-nosotros">Sobre Nosotros</a>
+            <a class="footer-condiciones">Condiciones</a>
+            <a class="footer-walter"  href="http://www.savewalterwhite.com/">SaveWalterWhite</a>
+            <a class="footer-contacto"  href="contacto.html">Contacto</a>
+            <button class="modoOscuro" id="switch">Modo Oscuro
+
+                <span><i class="fa fa-sun-o"></i></span>
+                <span><i class="fa fa-moon-o"></i></span>
+            </button>
         </nav>
     </footer>
 </body>

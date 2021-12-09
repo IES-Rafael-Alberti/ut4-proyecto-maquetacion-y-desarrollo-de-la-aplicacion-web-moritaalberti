@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/style-login.css" >
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script  async type="text/javascript" src="js/login.js"></script>
 </head>
 <body class="body">
     <header class="header">
         <nav class="header-nav">
             <ul class="header-ul">
-                <li class="header-li"><img class="header-li--logo" src="images/logo_breaking_bad.png"></img></li>
-                <li class="header-li"><a href="index.html" class="">Inicio</a></li>
+                <li class="header-li"><a href="index.html" class=""><img class="header-li--logo" src="images/logo_breaking_bad.png"></img></a></li>
+                <li id="header_inicio" class="header-li"><a  href="index.html">Inicio</a></li>
                 <li class="header-li"><a href="personajes.html" class="">Personajes</a></li>
-                <li class="header-li"><a class="">Episodios</a></li>
-                <li class="header-li"><a href="contacto.html">Contacto</a></li>
+                <li class="header-li"><a href="episodios.html" class="">Episodios</a></li>
+                <li id="header_contacto" class="header-li"><a href="contacto.html" >Contacto</a></li>
                 <li class="header-li"><a  href="registro.html" class="">Registro</a></li>
 
             </ul>
@@ -42,10 +43,10 @@
         <section class="main-form">
                 <hr class="form-hr-vertical">
                 <form class="main-form-inputs">
-                    <label for="correo" id="correo"></label>
+                    <label for="correo" id="label_correo"></label>
                     <input class="form-inputs" type="email" id="correo" placeholder="Correo Electronico" required>
-                    <label for="contraseña" id="contraseña"></label>
-                    <input class="form-inputs" type="password" id="contraseña" placeholder="Contraseña" required>
+                    <label for="contraseña" id="label_contraseña"></label>
+                    <div> <input class="form-inputs" type="password" id="contraseña" placeholder="Contraseña" required><i id="ojo" class="fas fa-eye"></i></div>
                     <button type="submit" class="form-button" >Login</button>
                 </form>
         </section>
@@ -53,12 +54,13 @@
     <footer class="footer">
         <hr>
         <nav class="footer-nav" >
-            <a class="">Cookies</a>
+            <a class="footer-cookies">Cookies</a>
             <a class="">Privacidad</a>
             <a class="">Info Legal</a>
-            <a class="">Sobre Nosotros</a>
-            <a class="">Condiciones</a>
-            <a class=""  href="http://www.savewalterwhite.com/">SaveWalterWhite</a>
+            <a class="footer-nosotros">Sobre Nosotros</a>
+            <a class="footer-condiciones">Condiciones</a>
+            <a class="footer-walter"  href="http://www.savewalterwhite.com/">SaveWalterWhite</a>
+            <a class="footer-contacto"  href="contacto.html">Contacto</a>
         </nav>
     </footer>
 </body>
