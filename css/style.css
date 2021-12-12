@@ -7,7 +7,7 @@
     font-family: "Bitter";
     src: url("../fonts/Bitter/static/Bitter-Medium.ttf");
 }
-/*Eliminacion de padding y margis asi como aplicar el border boz y el color de fondo y color de letra que va a tener toda la pagina por defecto*/
+/*Eliminacion de padding y margis asi como aplicar el border box y el color de fondo y color de letra que va a tener toda la pagina por defecto*/
 *{
     padding: 0%;
     margin: 0%;
@@ -75,7 +75,8 @@ a {text-decoration: none}
 .header-li--logo{
     width: 7vw;
 
-}/*Animacion de rotacion de logo*/
+}
+/*Animacion de rotacion de logo*/
 .header-li--logo:hover{
     animation: rotation 2s alternate ;
 }
@@ -141,7 +142,9 @@ a {text-decoration: none}
 }
 .main-description-description{
     padding: 3%;
-}.main-nav-ul{
+}
+/*Disposicion del menu de navegacion de la derecha*/
+.main-nav-ul{
     display: flex;
     align-items:flex-start;
     flex-direction: column;
@@ -184,6 +187,7 @@ a {text-decoration: none}
         grid-template-rows:3fr 0.5fr 5fr ;
         grid-template-columns:5fr 5fr ;
     }
+    /*Se mueve la descripcion hacia abajo*/
     .main-description{
 
         grid-column-start: 1;
@@ -200,6 +204,7 @@ a {text-decoration: none}
 
 
     }
+    /*Se pone la imagen en la izquierda*/
     .main-image{
         grid-row-start: 1;
         grid-row-end: 1;
@@ -209,7 +214,9 @@ a {text-decoration: none}
 
 
 
-    }.main-nav{
+    }
+    /*Se pone el menu de navegacion a la derecha junto a la foto */
+    .main-nav{
          grid-column-start: 2;
          grid-row-start: 1;
          font-family:"Breaking Bad" ;
@@ -266,6 +273,7 @@ a {text-decoration: none}
         transition: all 0.2s ease-in;
 
     }
+    /*Se eliminan los elementos necesarios para que el footer ni el header ocupe mucho*/
 
     #header_contacto {
         display: none;
@@ -300,6 +308,16 @@ a {text-decoration: none}
 
     .footer-contacto {
         display: block;
+    }
+    .font-breaking-bad:hover{
+       font-size: 3.5vw;
+        transition: all 0.2s ease-in;
+
+    }
+    .font-breaking-bad{
+        font-family: Breaking Bad;
+        transition: all 0.2s ease-in;
+
     }
 }
 /*-------------------------------*/

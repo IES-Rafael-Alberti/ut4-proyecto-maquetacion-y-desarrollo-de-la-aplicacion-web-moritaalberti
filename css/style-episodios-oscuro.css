@@ -1,4 +1,3 @@
-/*Importacion de fuente breaking bad*/
 @font-face {
     font-family: "Breaking Bad";
     src: url("../fonts/Heart Breaking Bad.otf");
@@ -7,14 +6,13 @@
     font-family: "Bitter";
     src: url("../fonts/Bitter/static/Bitter-Medium.ttf");
 }
-/*Eliminacion de padding y margis asi como aplicar el border box y el color de fondo y color de letra que va a tener toda la pagina por defecto*/
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: "Bitter";
-    color: #D9D9D9;
-    background-color: black;
+    color: black;
+    background-color: #d9d9d9;
 }
 .body{
     
@@ -27,7 +25,6 @@ margin-top: 5%;
 .footer-contacto{
     display: none;
 }
-/*Display de footer y header de forma que quede todo bien alineado*/
 .footer-nav{
     display: flex;
     align-items: center;
@@ -43,9 +40,7 @@ margin-top: 5%;
     width:100%;
 
 }
-/*Eliminacion de subrayado en enlaces*/
 a {text-decoration: none}
-/*Eliminacion de punto en las listas, asi como animacion al pasar el raton por encima*/
 .header-li{
     font-size: 1.2vw;
     list-style:none;
@@ -67,93 +62,82 @@ a {text-decoration: none}
     justify-content: space-around;
 
 
-}
+
+}.main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
 .font-breaking-bad{
     font-family: Breaking Bad;
     transition: all 0.2s ease-in;
 
 }
 
-/*Asignacin de fuentes para el titulo de la pagina que es el personaje*/
+.font-breaking-bad:hover{
+    font-size: 3.7vw;
+    
+    transition: all 0.2s ease-in;
 
+}
+.font-breaking-bad::first-letter:hover{
+    font-size: 3.7vw;
+    color: #FDD929;
+    transition: all 0.2s ease-in;
+}
 .font-breaking-bad-title{
-    padding-top: 1.5%;
-    justify-self:center;
-    grid-column-start: 2;
+    font-weight: normal;
     font-family: Breaking Bad;
     font-size: 5vw;
-    font-weight: normal;
 }
-.main-description-h2{
-    padding-top: 1.5%;
-    font-size: 2vw;
-    font-weight: normal;
-    grid-column-start: 2;
+.nav-hr-vertical{
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height: 75%;
+    width:          1px;       
 }
-/*Asignacion de tamañlo para cada linea de parrafo*/
-
-p{
-    padding-top: 1.5%;
-    font-size: 0.90vw;
+.image-hr-vertical{
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height: 95%;
+    width:          1px;    
+    color: black;
 }
-/*Disposicion de todas las linead del parrafo*/
-
-.main-parrafo{
-    padding-top: 1.5%;
+.main-episodios {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    grid-column-start: 2;
-    justify-self:center;
-}
-.main{
-    
-    display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
 }
-/*Disposicion de la imagen del personaje asi como una mascara de recorte*/
+.main-episodio-div{
+        padding: 1%;
+        text-align: center;
+        position: relative;
 
-.main-image{
-    padding-top: 1.5%;
-    justify-self:center;
-    object-fit: cover;
-    object-position: right;
+
+
+}
+.main-episodio-image:hover{
+    border: 2px solid #FDD929;
+}
+
+.main-episodio-image{
     width: 100%;
 
-
 }
-div{
-    grid-column-start: 2;
-    overflow: hidden;
-    height:  80%;
-
+.title-episodio{
+    text-align: center;
+    position: relative;
+    bottom :10%;
+    height: 8.7%;
+    width: 100%;
+    background-color: black;
+    color: #d9d9d9;
 }
-.main-parrafo p{
-    font-size: 1vw;
-}
-/*Media query para que la web sea responsive a partir de este punto toda pantalla que sea inferior a 850px se le aplicara este css*/
-
-@media(max-width: 850px) {
-    /*Se ajusta el tamaño de las fuentes y se centra todo*/
-
-    .main{
-        display: flex;
-        flex-direction: column;
-        margin: 3%;
-    }
-    .font-breaking-bad-title{
-        text-align: center;
-    }
-    .main-description-h2{
-        font-size: 4vw;
-    }
-    .main-parrafo p{
-        font-size: 1.7vw;
-    }
-    .main-image{
-        height: 70%;
-    }
+@media (max-width: 850px) {
     /*Modificacin footer y header para hacerlo resposive eliminando algunos elementos y reajustando su tamaño*/
     .header-li--logo {
         width: 9vw;
@@ -207,5 +191,8 @@ div{
     .footer-contacto {
         display: block;
     }
-}
+
 /*-------------------------------*/
+
+
+}

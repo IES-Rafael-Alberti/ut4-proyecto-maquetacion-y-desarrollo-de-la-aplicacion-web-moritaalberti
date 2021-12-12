@@ -4,19 +4,18 @@
     font-family: "Breaking Bad";
     src: url("../fonts/Heart Breaking Bad.otf");
 }
+/*Eliminacion de padding y margis asi como aplicar el border box y el color de fondo y color de letra que va a tener toda la pagina por defecto*/
 @font-face {
     font-family: "Bitter";
     src: url("../fonts/Bitter/static/Bitter-Medium.ttf");
 }
-/*Eliminacion de padding y margis asi como aplicar el border box y el color de fondo y color de letra que va a tener toda la pagina por defecto*/
-
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: "Bitter";
-    color: #D9D9D9;
-    background-color: black;
+    color: black;
+    background-color: #d9d9d9;
 }
 .body{
     
@@ -29,9 +28,7 @@ margin-top: 5%;
 .footer-contacto{
     display: none;
 }
-
 /*Display de footer y header de forma que quede todo bien alineado*/
-
 .footer-nav{
     display: flex;
     align-items: center;
@@ -48,10 +45,8 @@ margin-top: 5%;
 
 }
 /*Eliminacion de subrayado en enlaces*/
-
 a {text-decoration: none}
 /*Eliminacion de punto en las listas, asi como animacion al pasar el raton por encima*/
-
 .header-li{
     font-size: 1.2vw;
     list-style:none;
@@ -92,8 +87,8 @@ a {text-decoration: none}
    
 
 }
-/*Colocacion de la imagen principal en pantallas*/
 
+/*Colocacion de la imagen principal en pantallas*/
 .main-description-image{
     width: 100%;
     padding: 3%;
@@ -131,26 +126,21 @@ a {text-decoration: none}
 
 }
 /*Estilos aplicados a los inputs y botones del formulario*/
+
 .form-button{
     width: 40%;
     font-size: 1.75vw;
     font-family: "Breaking Bad";
-    border: 1px solid #d9d9d9;
+    border: 1px solid black;
 
 }
 .form-inputs{
     
     border:0;
     font-size: 1vmax;
-    border-bottom:1px solid #d9d9d9;;
+    border-bottom:1px solid black;
 
-}.form-inputs-contraseña{
-
-     border:0;
-     font-size: 1vmax;
-     border-bottom:1px solid #d9d9d9;;
-
- }
+}
 .form-checkboxs{
     display: inline-flex;
     align-items: center;
@@ -191,55 +181,16 @@ a {text-decoration: none}
     
 
 }
+.font-breaking-bad{
+    font-family: Breaking Bad;
+    transition: all 0.2s ease-in;
+
+}
 @media (max-width: 850px) {
-    /*Modificacin footer y header para hacerlo resposive eliminando algunos elementos y reajustando su tamaño*/
-    .header-li--logo{
-        width: 9vw;
-
-    }
-    .header-li{
-        font-size: 3vw;
-        list-style:none;
-        transition: all 0.2s ease-in;
-
-
-    }
-    .header-li:hover{
-        font-size: 3vw;
-        transition: all 0.2s ease-in;
-
-    }
-    #header_contacto{
-        display: none;
-    }
-    #header_inicio{
-        display: none;
-    }
-    .footer-nav{
-        display: flex;
-        align-items: center;
-        justify-content:space-around;
-        font-size: 3vw;
-    }
-    .footer-condiciones{
-        display: none;
-    }
-    .footer-cookies{
-        display: none;
-    }
-    .footer-walter{
-        display: none;
-    }
-    .footer-nosotros{
-        display: none;
-    }
-    .footer-contacto{
-        display: block;
-    }
-    /*-------------------------------*/
     /*Nueva disposicion del formulario para hacerlo acorde al nuevo tamaño de la pantalla*/
+
     .main-form-inputs{
-        height: 50%;
+        height: 100%;
         display: flex;
         align-items:flex-start;
         flex-direction: column;
@@ -253,7 +204,7 @@ a {text-decoration: none}
         font-family:"Breaking Bad" ;
         display: flex;
         align-items:center;
-        align-content: space-evenly;
+        align-content: space-around;
         margin-left: 3%;
 
 
@@ -265,14 +216,14 @@ a {text-decoration: none}
         width: 40%;
         font-size: 5vw;
         font-family: "Breaking Bad";
-        border: 1px solid #d9d9d9;
+        border: 1px solid black;
         align-self: center;
     }
     .form-inputs{
 
         border:0;
         font-size: 3vw;
-        border-bottom:1px solid #d9d9d9;;
+        border-bottom:1px solid black;;
 
     }
     ul.main-nav-ul{
@@ -286,13 +237,13 @@ a {text-decoration: none}
         font-size: 7vw;
     }
     /*Nueva disposicion del main*/
+
     .main{
         display: grid;
         grid-template-rows:3fr 0.5fr 5fr ;
         grid-template-columns:5fr 5fr ;
     }
     /*Se mueve la descripcion hacia abajo*/
-
     .main-description{
 
         grid-column-start: 1;
@@ -309,8 +260,8 @@ a {text-decoration: none}
 
 
     }
-    /*Se pone la imagen en la izquierda*/
 
+    /*Se pone la imagen en la izquierda*/
     .main-image{
         grid-row-start: 1;
         grid-row-end: 1;
@@ -351,7 +302,7 @@ a {text-decoration: none}
      }.main-title{
           text-align: center;
           grid-column-start: 1;
-          top:1vw;
+        top:1vw;
 
       }.main-title-h1{
            font-weight: normal;
@@ -362,16 +313,63 @@ a {text-decoration: none}
     .main-title-image{
         width: 99%;
     }
+    /*Modificacin footer y header para hacerlo resposive eliminando algunos elementos y reajustando su tamaño*/
+    .header-li--logo {
+        width: 9vw;
+
+    }
+
+    .header-li {
+        font-size: 3vw;
+        list-style: none;
+        transition: all 0.2s ease-in;
+
+
+    }
+    .header-li:hover{
+        font-size: 3vw;
+        transition: all 0.2s ease-in;
+
+    }
+    #header_contacto {
+        display: none;
+    }
+
+    #header_inicio {
+        display: none;
+    }
+
+    .footer-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 3vw;
+    }
+
+    .footer-condiciones {
+        display: none;
+    }
+
+    .footer-cookies {
+        display: none;
+    }
+
+    .footer-walter {
+        display: none;
+    }
+
+    .footer-nosotros {
+        display: none;
+    }
+
+    .footer-contacto {
+        display: block;
+    }
+
+/*-------------------------------*/
+
 
 }
-/*Aplicacion de la fuente importada a una clase para usarla despues en el main*/
-
-.font-breaking-bad{
-    font-family: Breaking Bad;
-    transition: all 0.2s ease-in;
-
-}
-/*Animacion para hacer que en el menu principal se agrande la letra al pasar por encima*/
 
 .font-breaking-bad:hover{
     font-size: 3.7vw;
@@ -379,11 +377,14 @@ a {text-decoration: none}
     transition: all 0.2s ease-in;
 
 }
+/*Animacion para hacer que en el menu principal se agrande la letra al pasar por encima*/
 .font-breaking-bad::first-letter:hover{
     font-size: 3.7vw;
     color: #FDD929;
     transition: all 0.2s ease-in;
 }
+/*Aplicacion de la fuente importada a una clase para usarla despues en el main*/
+
 .font-breaking-bad-title{
     font-family: Breaking Bad;
     font-size: 5vw;
@@ -399,5 +400,21 @@ a {text-decoration: none}
     border-left:    1px solid hsla(200, 10%, 50%,100);
     height: 95%;
     width:          1px;    
-    color: #d9d9d9;   
+    color: black;
+}
+.form-inputs-error{
+    border:0;
+    font-size: 1vmax;
+    border-bottom:1px solid red;
+}
+.form-checkboxs{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: arial;
+}
+.span_error_forms{
+    color: red;
+    font-size: 0.8vw;
+
 }

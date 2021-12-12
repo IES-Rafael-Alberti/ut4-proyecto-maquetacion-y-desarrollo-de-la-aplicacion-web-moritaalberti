@@ -13,8 +13,8 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: "Bitter";
-    color: #D9D9D9;
-    background-color: black;
+    color: black;
+    background-color: #d9d9d9;
 }
 .body{
     
@@ -27,6 +27,7 @@ margin-top: 5%;
 .footer-contacto{
     display: none;
 }
+
 /*Display de footer y header de forma que quede todo bien alineado*/
 .footer-nav{
     display: flex;
@@ -44,23 +45,20 @@ margin-top: 5%;
 
 }
 /*Eliminacion de subrayado en enlaces*/
-
 a {text-decoration: none}
 /*Eliminacion de punto en las listas, asi como animacion al pasar el raton por encima*/
-
 .header-li{
     font-size: 1.2vw;
     list-style:none;
     transition: all 0.2s ease-in;
 
-
 }
+/*Animacion de rotacion de logo*/
 .header-li:hover{
     font-size: 1.5vw;
     transition: all 0.2s ease-in;
 
-}
-.header-li--logo{
+}.header-li--logo{
     width: 7vw;
 
 }.header-ul{
@@ -68,96 +66,71 @@ a {text-decoration: none}
     align-items: center;
     justify-content: space-around;
 
-
 }
-.font-breaking-bad{
-    font-family: Breaking Bad;
-    transition: all 0.2s ease-in;
-
-}
-
-/*Asignacin de fuentes para el titulo de la pagina que es el epidosdio*/
-.font-breaking-bad-title{
-    padding-top: 1.5%;
-    justify-self:center;
-    grid-column-start: 2;
-    font-family: Breaking Bad;
-    font-size: 5vw;
-    font-weight: normal;
-}
-.main-description-h2{
-    padding-top: 1.5%;
-    font-size: 2vw;
-    font-weight: normal;
-    grid-column-start: 2;
-}
-/*Esta nueva fuente se usara para indicar el numero de capitulo asi como su temporada*/
-.main-description-h3{
-    font-size: 1vw;
-    font-weight: normal;
-    grid-column-start: 2;
-}
-/*Asignacion de tamañlo para cada linea de parrafo*/
-p{
-    padding-top: 1.5%;
-    font-size: 0.90vw;
-}
-/*Disposicion de todas las linead del parrafo*/
-.main-parrafo{
-    padding-top: 1.5%;
+ /*Nuevo display flex para presentar a los personajes*/
+.main{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    grid-column-start: 2;
-    justify-self:center;
-}
-.main{
+    align-items: center;
+    justify-content: space-evenly;
     
-    display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
 
 }
-/*Disposicion de la imagen del episodio asi como una mascara de recorte*/
-.main-image{
-    padding-top: 1.5%;
-    justify-self:center;
-    object-fit: cover;
-    object-position: right;
-    width: 100%;
-
-
+.main-h1{
+    font-family: "Breaking Bad";
+    font-weight: normal;
+    font-size: 4vw;
 }
-div{
-    grid-column-start: 2;
+/*DIsplay personajes, solo se le da el 50% del ancho de la pantalla
+para que este en el medio y tenga unos margenes bien marcados*/
+.main-personajes{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/*Cada personaje ocupa un tercio de ese 50%, aqui se aplica una mascara de recorte con el overflow*/
+.main-personaje-div{
+    width: 33%;
+    position: relative;
+    padding: 1%;
+    text-align: center;
     overflow: hidden;
-    height:  80%;
+    
 
 }
-.main-parrafo p{
-    font-size: 1vw;
+.main-personaje-div:hover{
+    border: #FDD929 1px solid;
+}
+/*Aqui se hace que la foto ocupe el 100% de su tamaño pero que este centrado y que se recorte al tamaño de su padre*/
+.pesonaje-foto{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
 }
 /*Media query para que la web sea responsive a partir de este punto toda pantalla que sea inferior a 850px se le aplicara este css*/
-@media(max-width: 850px){
-    /*Se ajusta el tamaño de las fuentes y se centra todo*/
-    .main{
+
+@media (max-width: 850px) {
+    /*Se hace que el display de los personajes sea distinto haciendo que ocupe el 100 de la patantalla*/
+    .main-personajes{
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        margin: 3%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
-    .font-breaking-bad-title{
+    /*Ahora en vez de 3 columnas solo hay 2 columnas de personajes*/
+    .main-personaje-div{
+        width: 40%;
+        position: relative;
+        padding: 1%;
         text-align: center;
-    }
-    .main-description-h2{
-        font-size: 4vw;
-    }
-    .main-description-h3{
-        font-size: 2vw;
-    }
-    .main-parrafo p{
-        font-size: 1.7vw;
-    }
-    .main-image{
-        height: 70%;
+        overflow: hidden;
+
+
     }
     /*Modificacin footer y header para hacerlo resposive eliminando algunos elementos y reajustando su tamaño*/
     .header-li--logo{
@@ -206,3 +179,18 @@ div{
     /*-------------------------------*/
 }
 
+.font-breaking-bad{
+    font-family: Breaking Bad;
+}
+.font-breaking-bad-title{
+    font-family: Breaking Bad;
+    font-size: 5vw;
+}.title-personajes{
+    text-align: center;
+    position: relative;
+    bottom :10%;
+    height: 8.7%;
+    width: 100%;
+    background-color: black;
+    color: #d9d9d9;
+}

@@ -1,3 +1,4 @@
+/*Importacion de fuente breaking bad*/
 @font-face {
     font-family: "Breaking Bad";
     src: url("../fonts/Heart Breaking Bad.otf");
@@ -6,6 +7,7 @@
     font-family: "Bitter";
     src: url("../fonts/Bitter/static/Bitter-Medium.ttf");
 }
+/*Eliminacion de padding y margis asi como aplicar el border box y el color de fondo y color de letra que va a tener toda la pagina por defecto*/
 *{
     padding: 0%;
     margin: 0%;
@@ -25,6 +27,8 @@ margin-top: 5%;
 .footer-contacto{
     display: none;
 }
+
+/*Display de footer y header de forma que quede todo bien alineado*/
 .footer-nav{
     display: flex;
     align-items: center;
@@ -40,13 +44,16 @@ margin-top: 5%;
     width:100%;
 
 }
+/*Eliminacion de subrayado en enlaces*/
 a {text-decoration: none}
+/*Eliminacion de punto en las listas, asi como animacion al pasar el raton por encima*/
 .header-li{
     font-size: 1.2vw;
     list-style:none;
     transition: all 0.2s ease-in;
 
 }
+/*Animacion de rotacion de logo*/
 .header-li:hover{
     font-size: 1.5vw;
     transition: all 0.2s ease-in;
@@ -60,6 +67,7 @@ a {text-decoration: none}
     justify-content: space-around;
 
 }
+ /*Nuevo display flex para presentar a los personajes*/
 .main{
     display: flex;
     flex-direction: column;
@@ -73,6 +81,8 @@ a {text-decoration: none}
     font-weight: normal;
     font-size: 4vw;
 }
+/*DIsplay personajes, solo se le da el 50% del ancho de la pantalla
+para que este en el medio y tenga unos margenes bien marcados*/
 .main-personajes{
     width: 50%;
     display: flex;
@@ -80,6 +90,7 @@ a {text-decoration: none}
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+/*Cada personaje ocupa un tercio de ese 50%, aqui se aplica una mascara de recorte con el overflow*/
 .main-personaje-div{
     width: 33%;
     position: relative;
@@ -92,6 +103,7 @@ a {text-decoration: none}
 .main-personaje-div:hover{
     border: #FDD929 1px solid;
 }
+/*Aqui se hace que la foto ocupe el 100% de su tamaño pero que este centrado y que se recorte al tamaño de su padre*/
 .pesonaje-foto{
     height: 100%;
     width: 100%;
@@ -99,7 +111,10 @@ a {text-decoration: none}
     object-position: center;
 
 }
+/*Media query para que la web sea responsive a partir de este punto toda pantalla que sea inferior a 850px se le aplicara este css*/
+
 @media (max-width: 850px) {
+    /*Se hace que el display de los personajes sea distinto haciendo que ocupe el 100 de la patantalla*/
     .main-personajes{
         width: 100%;
         display: flex;
@@ -107,6 +122,7 @@ a {text-decoration: none}
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+    /*Ahora en vez de 3 columnas solo hay 2 columnas de personajes*/
     .main-personaje-div{
         width: 40%;
         position: relative;

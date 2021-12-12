@@ -1,8 +1,10 @@
+/*Importacion de fuente breaking bad*/
 
 @font-face {
     font-family: "Breaking Bad";
     src: url("../fonts/Heart Breaking Bad.otf");
 }
+/*Eliminacion de padding y margis asi como aplicar el border box y el color de fondo y color de letra que va a tener toda la pagina por defecto*/
 @font-face {
     font-family: "Bitter";
     src: url("../fonts/Bitter/static/Bitter-Medium.ttf");
@@ -26,6 +28,7 @@ margin-top: 5%;
 .footer-contacto{
     display: none;
 }
+/*Display de footer y header de forma que quede todo bien alineado*/
 .footer-nav{
     display: flex;
     align-items: center;
@@ -41,7 +44,9 @@ margin-top: 5%;
     width:100%;
 
 }
+/*Eliminacion de subrayado en enlaces*/
 a {text-decoration: none}
+/*Eliminacion de punto en las listas, asi como animacion al pasar el raton por encima*/
 .header-li{
     font-size: 1.2vw;
     list-style:none;
@@ -63,11 +68,15 @@ a {text-decoration: none}
     justify-content: space-around;
 
 
-}.main{
+}
+/*Display del main utilizando grid*/
+.main{
     grid-template-columns: 3fr 4fr 2fr;
     grid-template-rows: 0.3fr 2fr;
     display: grid;
-}.main-description{
+}
+/*Display de la descripcion de la pagina donde dice sinopsis*/
+.main-description{
     
 
     grid-column-start: 2;
@@ -78,6 +87,8 @@ a {text-decoration: none}
    
 
 }
+
+/*Colocacion de la imagen principal en pantallas*/
 .main-description-image{
     width: 100%;
     padding: 3%;
@@ -102,7 +113,9 @@ a {text-decoration: none}
 
 
 
-}.main-form{
+}
+/*Colocacion de el formulario en pantalla asi como su disposicion*/
+.main-form{
     grid-column-start: 3;
     font-family:"Breaking Bad" ;
     display: flex;
@@ -112,6 +125,8 @@ a {text-decoration: none}
 
 
 }
+/*Estilos aplicados a los inputs y botones del formulario*/
+
 .form-button{
     width: 40%;
     font-size: 1.75vw;
@@ -172,6 +187,8 @@ a {text-decoration: none}
 
 }
 @media (max-width: 850px) {
+    /*Nueva disposicion del formulario para hacerlo acorde al nuevo tamaño de la pantalla*/
+
     .main-form-inputs{
         height: 100%;
         display: flex;
@@ -219,11 +236,14 @@ a {text-decoration: none}
         font-family: Breaking Bad;
         font-size: 7vw;
     }
+    /*Nueva disposicion del main*/
+
     .main{
         display: grid;
         grid-template-rows:3fr 0.5fr 5fr ;
         grid-template-columns:5fr 5fr ;
     }
+    /*Se mueve la descripcion hacia abajo*/
     .main-description{
 
         grid-column-start: 1;
@@ -240,6 +260,8 @@ a {text-decoration: none}
 
 
     }
+
+    /*Se pone la imagen en la izquierda*/
     .main-image{
         grid-row-start: 1;
         grid-row-end: 1;
@@ -249,7 +271,9 @@ a {text-decoration: none}
 
 
 
-    }.main-form{
+    }
+    /*Se pone el formulario a la derecha junto a la foto */
+    .main-form{
          grid-column-start: 2;
          grid-row-start: 1;
          font-family:"Breaking Bad" ;
@@ -353,11 +377,14 @@ a {text-decoration: none}
     transition: all 0.2s ease-in;
 
 }
+/*Animacion para hacer que en el menu principal se agrande la letra al pasar por encima*/
 .font-breaking-bad::first-letter:hover{
     font-size: 3.7vw;
     color: #FDD929;
     transition: all 0.2s ease-in;
 }
+/*Aplicacion de la fuente importada a una clase para usarla despues en el main*/
+
 .font-breaking-bad-title{
     font-family: Breaking Bad;
     font-size: 5vw;
