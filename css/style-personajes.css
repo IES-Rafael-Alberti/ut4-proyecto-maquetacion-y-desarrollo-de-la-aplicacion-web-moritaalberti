@@ -53,6 +53,17 @@ a {text-decoration: none}
     transition: all 0.2s ease-in;
 
 }
+.paginado-li{
+    font-size: 1.2vw;
+    list-style:none;
+    transition: all 0.2s ease-in;
+
+}
+.paginado-li:hover{
+    font-size: 1.5vw;
+    transition: all 0.2s ease-in;
+
+}
 /*Animacion de rotacion de logo*/
 .header-li:hover{
     font-size: 1.5vw;
@@ -62,6 +73,14 @@ a {text-decoration: none}
     width: 7vw;
 
 }.header-ul{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.paginado-ul{
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -138,6 +157,13 @@ para que este en el medio y tenga unos margenes bien marcados*/
 
     }
     .header-li{
+        font-size: 3vw;
+        list-style:none;
+        transition: all 0.2s ease-in;
+
+
+    }
+    .paginado-li{
         font-size: 3vw;
         list-style:none;
         transition: all 0.2s ease-in;
